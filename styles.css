@@ -1,0 +1,111 @@
+body {
+    background-color: #f5e4d7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 226vh;
+    overflow: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.recipe-card {
+    width: 94%;
+    margin-top: 16.5px;
+    margin-left: 16.5px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content {
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+ul, ol {
+    padding-left: 20px;
+    color: #666;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+ol {
+    counter-reset: item;
+}
+
+.instructions ol li {
+    counter-increment: item;
+}
+
+.instructions ol li::before {
+    content: counter(item) ". ";
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.prep-time ul, .ingredients ul, .instructions ol {
+    list-style: none;
+    padding: 0;
+}
+
+.prep-time ul li::before {
+    content: "•";
+    color: #ff6347;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.nutrition {
+    margin-top: 20px;
+}
+
+.nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.nutrition table, .nutrition th, .nutrition td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.nutrition th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
